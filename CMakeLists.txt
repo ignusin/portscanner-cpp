@@ -17,4 +17,5 @@ if(MINGW)
     set(BOOST_LIB_SUFFIX "-mt")
 endif()
 
-# target_link_libraries(psc)
+
+target_link_options(psc PRIVATE -static -static-libgcc -static-libstdc++)
